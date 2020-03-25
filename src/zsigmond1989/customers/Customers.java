@@ -45,15 +45,15 @@ class Reader{
 
     }
     public void sortByAccDate(){
-        Collections.sort( customers , (c1, c2) -> c1.getAccDate().compareTo(c2.getAccDate()));
+        customers.sort((c1, c2) -> c1.getAccDate().compareTo(c2.getAccDate()));
     }
 
     public void sortByNames(){
-        Collections.sort( customers , (c1, c2) -> c1.getNames().compareTo(c2.getNames()));
+        customers.sort((c1, c2) -> c1.getNames().compareTo(c2.getNames()));
     }
 
     public void sortBySum(){
-        Collections.sort( customers , (c1, c2) -> c1.getSum().compareTo(c2.getSum()));
+        customers.sort((c1, c2) -> c1.getSum().compareTo(c2.getSum()));
     }
 
     public void saveCustomers(String fileName){
