@@ -2,7 +2,6 @@ package zsigmond1989.customers;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Customers {
