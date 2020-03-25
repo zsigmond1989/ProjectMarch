@@ -63,9 +63,9 @@ class Reader{
         try {
             bw = new BufferedWriter( new FileWriter(outputFile));
             bw.write(headLine); bw.newLine();
-            for (Customer co: customers ) {
-                oneLine = co.getName()+","+co.getMotherName()+","+co.getdOB()+","+co.getpOB()+","+
-                        co.getAccDate()+","+co.getAccNo()+","+co.getBalance()+","+co.getDeposit();
+            for (Customer cu: customers ) {
+                oneLine = cu.getName()+","+cu.getMotherName()+","+cu.getdOB()+","+cu.getpOB()+","+
+                        cu.getAccDate()+","+cu.getAccNo()+","+cu.getBalance()+","+cu.getDeposit();
                 bw.write( oneLine ); bw.newLine();
             }
             bw.close();
